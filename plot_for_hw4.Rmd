@@ -1,0 +1,67 @@
+---
+title: "Plotly Examples"
+output: 
+  html_document:
+    code_folding: hide
+    toc: true
+    toc_float: true
+---
+
+My name is Ziqi and I make websites _with interactive graphics_ !!!
+
+
+```{r}
+library(tidyverse)
+library(viridis)
+library(p8105.datasets)
+library(plotly)
+```
+
+```{r}
+data("instacart")
+instacart
+```
+
+
+
+
+ploty1
+
+```{r}
+instacart %>% 
+  group_by(aisle) %>% 
+  summarize(n = n()) %>% 
+  filter(n >10000) %>% 
+  mutate(aisle = forcats::fct_reorder(aisle, n)) %>% 
+  plot_ly(x = ~aisle, y = ~n, color = ~aisle, type = "bar")
+```
+
+plot2
+```{r}
+
+
+
+```
+
+plot3
+
+
+
+```{r}
+instacart %>% 
+  filter(product_name == "Organic Whole Strawberries" ) %>% 
+  mutate(
+    order_dow=recode(order_dow,
+                     `0`="Sunday",`1`="Monday",`2`="Tuesday",`3`="Wednesday",
+                     `4`="Thursday",`5`="Friday",`6`="Saturday"),
+    order_dow = factor(order_dow,order = TRUE, levels = c("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"))
+    ) %>% 
+  plot_ly(x = ~order_dow, y = ~order_hour_of_day, color = ~product_name, type = "box",
+          colors = "Set2")
+
+```
+
+
+
+
+
