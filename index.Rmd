@@ -21,7 +21,7 @@ You can know about me [here](CV.html).
 
 The plots would also present in dashboard. Click [here](plot_for_hw4.html) to see this draft.(It's ok to not see this)
 
-try this[Dash](Dashboard.html)
+
 # Let's see my little cat! 
 
 She was born six months ago. Her name is Avocado and she lives with my parents now.
