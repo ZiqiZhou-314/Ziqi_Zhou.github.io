@@ -1,0 +1,108 @@
+---
+title: "Ziqi's CV"
+output: 
+  html_document:
+    code_folding: hide
+    toc: true
+    toc_float: true
+---
+
+This is Ziqi's CV.
+
+zz2710@cumc.columbia.edu
+50 Haven Ave, B12, NYC, NY, U.S. 10032
+
+# Education
+
+**B.S. in Biological Sciences**
+
+_09/2015-06/2019_
+
+_Nankai University (NKU), Tianjin, China_
+
+**Master of Science in Biostatistics**
+
+_08/2019-05/2021(expected)_
+
+_Columbia University, NYC, U.S._
+
+# Professional Experience
+
+**Summer Research Assistant**   
+_07-08/2018_
+_Nankai University Tianjin, China _
+
+**Project: Method for Predicting Genetic Risk of Salt-Sensitive Hypertension Based on Next-Generation Sequencing**
+
+Utilized Perl XShell4 to map the target gene markers on their gene positions to facilitate the observation and related record processing.
+
+Sorted the sequence in ascending order and realigned and recalibrated the sequence. 
+
+Detected and identified SNPs and INDELs by variant calling.
+
+Filtered SNPs and INDELs according to different standards to achieve the calibration. 
+
+Added gene-based, region-based and filtered-based annotation.
+
+Extracted the salt-sensitive related information by comparing the gene and the annotation. 
+
+Preparing to file a China’s patent based on this method.
+
+# Internship
+
+**Paid Summer Intern**
+
+_Vastdata Big Data Co. Ltd._     
+_05/2016-03/2018_
+
+Collected and analyzed data related to public opinions such as customer comments for hotel service.
+
+Profiled and predicted the users in specific cellphone App such as Douyin and KOL to provide clear and accurate
+information on guiding related companies advertising strategy
+
+
+**Director of Sales Department**         
+
+05/2016-03/2018 
+
+_Tianjin Faraway Technology Co. Ltd._
+
+_Tianjin, China_
+
+Entrepreneurship experience with two Ph.D. students from NKU.
+
+Maintained the operation of WeChat Platform “Faraway” by editing articles related to science, advertising in
+time, and collecting and analyzing operation data
+
+Designed and organized projects including marketing investigation, data analysis, and making corresponding
+advertisement strategies to increase the public impact of the company
+
+ Attracted and maintained over 1150 long-term followers on the WeChat platform.
+
+# Skills
+
+Computer skills: Office, Photoshop, SPSS, operation of WeChat Platform
+
+Professional Software: Minitab, Origin, Mathematics, Stella, perl, XShell, EditPlus，R
+
+# Leadership and Involvement
+
+**Associate Head in Light Media Club**
+
+_Nankai University_
+
+Organized Unforgettable Chunjiao-Campus Meeting with Actress Yang Qianhua. Planed and managed club members to produce activity plans and ensured plans’ execution.
+
+**Summer Surveyor**
+
+_Hongyi Ecological Farm_
+
+Selected as the member of Demonstration Team to conduct filed survey in an ecological farm. 
+
+Investigated the farm to collect daily operating data for the study of the extension of ecological farms 
+
+Interviewed local residents to understand farm situations and related information.
+
+Won 3rd prize of 2016 Summer Social Practice Articles Competition at NKU.
+
+

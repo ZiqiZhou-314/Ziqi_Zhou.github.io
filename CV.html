@@ -12,7 +12,7 @@
 
 
 
-<title>Ziqi’s homework website</title>
+<title>Ziqi’s CV</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -24,6 +24,7 @@
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/navigation-1.1/codefolding.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
@@ -250,6 +251,9 @@ $(document).ready(function () {
 </style>
 
 <!-- code folding -->
+<style type="text/css">
+.code-folding-btn { margin-bottom: 4px; }
+</style>
 
 
 
@@ -368,27 +372,77 @@ div.tocify {
 
 <div class="fluid-row" id="header">
 
+<div class="btn-group pull-right">
+<button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Code</span> <span class="caret"></span></button>
+<ul class="dropdown-menu" style="min-width: 50px;">
+<li><a id="rmd-show-all-code" href="#">Show All Code</a></li>
+<li><a id="rmd-hide-all-code" href="#">Hide All Code</a></li>
+</ul>
+</div>
 
 
-<h1 class="title toc-ignore">Ziqi’s homework website</h1>
+
+<h1 class="title toc-ignore">Ziqi’s CV</h1>
 
 </div>
 
 
-<p>This is Ziqi’s website for Homework 4. It is awesome!</p>
-<p>This page includes my academic experience and you could find some way to contact me on the top of this website.</p>
-<div id="here-is-the-draft-of-the-ploty." class="section level1">
-<h1>Here is the draft of the ploty.</h1>
-<p><a href="plot_for_hw4.html">here</a></p>
+<p>This is Ziqi’s CV.</p>
+<p><a href="mailto:zz2710@cumc.columbia.edu" class="email">zz2710@cumc.columbia.edu</a> 50 Haven Ave, B12, NYC, NY, U.S. 10032</p>
+<div id="education" class="section level1">
+<h1>Education</h1>
+<p><strong>B.S. in Biological Sciences</strong></p>
+<p><em>09/2015-06/2019</em></p>
+<p><em>Nankai University (NKU), Tianjin, China</em></p>
+<p><strong>Master of Science in Biostatistics</strong></p>
+<p><em>08/2019-05/2021(expected)</em></p>
+<p><em>Columbia University, NYC, U.S.</em></p>
 </div>
-<div id="cv" class="section level1">
-<h1>CV</h1>
-<p>You can know about me <a href="CV.html">here</a>.</p>
+<div id="professional-experience" class="section level1">
+<h1>Professional Experience</h1>
+<p><strong>Summer Research Assistant</strong><br />
+<em>07-08/2018</em> <em>Nankai University Tianjin, China </em></p>
+<p><strong>Project: Method for Predicting Genetic Risk of Salt-Sensitive Hypertension Based on Next-Generation Sequencing</strong></p>
+<p>Utilized Perl XShell4 to map the target gene markers on their gene positions to facilitate the observation and related record processing.</p>
+<p>Sorted the sequence in ascending order and realigned and recalibrated the sequence.</p>
+<p>Detected and identified SNPs and INDELs by variant calling.</p>
+<p>Filtered SNPs and INDELs according to different standards to achieve the calibration.</p>
+<p>Added gene-based, region-based and filtered-based annotation.</p>
+<p>Extracted the salt-sensitive related information by comparing the gene and the annotation.</p>
+<p>Preparing to file a China’s patent based on this method.</p>
 </div>
-<div id="lets-see-my-little-cat" class="section level1">
-<h1>Let’s see my little cat!</h1>
-<p>She was born six months ago. Her name is Avocado and she lives with my parents now.</p>
-<p><img src="Avocado2.JPG" /></p>
+<div id="internship" class="section level1">
+<h1>Internship</h1>
+<p><strong>Paid Summer Intern</strong></p>
+<p><em>Vastdata Big Data Co. Ltd.</em><br />
+<em>05/2016-03/2018</em></p>
+<p>Collected and analyzed data related to public opinions such as customer comments for hotel service.</p>
+<p>Profiled and predicted the users in specific cellphone App such as Douyin and KOL to provide clear and accurate information on guiding related companies advertising strategy</p>
+<p><strong>Director of Sales Department</strong></p>
+<p>05/2016-03/2018</p>
+<p><em>Tianjin Faraway Technology Co. Ltd.</em></p>
+<p><em>Tianjin, China</em></p>
+<p>Entrepreneurship experience with two Ph.D. students from NKU.</p>
+<p>Maintained the operation of WeChat Platform “Faraway” by editing articles related to science, advertising in time, and collecting and analyzing operation data</p>
+<p>Designed and organized projects including marketing investigation, data analysis, and making corresponding advertisement strategies to increase the public impact of the company</p>
+<p>Attracted and maintained over 1150 long-term followers on the WeChat platform.</p>
+</div>
+<div id="skills" class="section level1">
+<h1>Skills</h1>
+<p>Computer skills: Office, Photoshop, SPSS, operation of WeChat Platform</p>
+<p>Professional Software: Minitab, Origin, Mathematics, Stella, perl, XShell, EditPlus，R</p>
+</div>
+<div id="leadership-and-involvement" class="section level1">
+<h1>Leadership and Involvement</h1>
+<p><strong>Associate Head in Light Media Club</strong></p>
+<p><em>Nankai University</em></p>
+<p>Organized Unforgettable Chunjiao-Campus Meeting with Actress Yang Qianhua. Planed and managed club members to produce activity plans and ensured plans’ execution.</p>
+<p><strong>Summer Surveyor</strong></p>
+<p><em>Hongyi Ecological Farm</em></p>
+<p>Selected as the member of Demonstration Team to conduct filed survey in an ecological farm.</p>
+<p>Investigated the farm to collect daily operating data for the study of the extension of ecological farms</p>
+<p>Interviewed local residents to understand farm situations and related information.</p>
+<p>Won 3rd prize of 2016 Summer Social Practice Articles Competition at NKU.</p>
 </div>
 
 
@@ -426,6 +480,11 @@ $(document).ready(function () {
 </script>
 
 <!-- code folding -->
+<script>
+$(document).ready(function () {
+  window.initializeCodeFolding("hide" === "show");
+});
+</script>
 
 <script>
 $(document).ready(function ()  {

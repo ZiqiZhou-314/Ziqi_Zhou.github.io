@@ -16,7 +16,7 @@ This page includes my academic experience and you could find some way to contact
 
 # CV
 
-You can know about me [here](about.html).
+You can know about me [here](CV.html).
 
 
 # Let's see my little cat! 

@@ -3,10 +3,6 @@ output_dir: "."
 navbar:
   title: "Home"
   right:
-    - text: Problem_2
-      href: problem_2.html
-    - text: "Ploty"
-      href: ploty.html
     - text: "Dashboard"
       href: dashboard.html
     - icon: fa-envelope fa-lg

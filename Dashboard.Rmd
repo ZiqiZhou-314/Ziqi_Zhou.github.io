@@ -8,6 +8,11 @@ output:
 
 ```{r setup, include=FALSE}
 library(flexdashboard)
+library(tidyverse)
+library(viridis)
+library(p8105.datasets)
+library(plotly)
+data("instacart")
 ```
 
 Column {data-width=650}
@@ -16,7 +21,12 @@ Column {data-width=650}
 ### Chart A
 
 ```{r}
-
+instacart %>% 
+  group_by(aisle) %>% 
+  summarize(n = n()) %>% 
+  filter(n >10000) %>% 
+  mutate(aisle = forcats::fct_reorder(aisle, n)) %>% 
+  plot_ly(x = ~aisle, y = ~n, color = ~aisle, type = "bar")
 ```
 
 Column {data-width=350}
@@ -25,6 +35,16 @@ Column {data-width=350}
 ### Chart B
 
 ```{r}
+instacart %>% 
+  filter(product_name == "Organic Whole Strawberries" ) %>% 
+  mutate(
+    order_dow=recode(order_dow,
+                     `0`="Sunday",`1`="Monday",`2`="Tuesday",`3`="Wednesday",
+                     `4`="Thursday",`5`="Friday",`6`="Saturday"),
+    order_dow = factor(order_dow,order = TRUE, levels = c("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"))
+    ) %>% 
+  plot_ly(x = ~order_dow, y = ~order_hour_of_day, color = ~product_name, type = "box",
+          colors = "Set2")
 
 ```
 
