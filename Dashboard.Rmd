@@ -18,8 +18,8 @@ data("instacart")
 Column {data-width=650}
 -----------------------------------------------------------------------
 
-### Chart A
-Number of items ordered in each aisle
+### Number of items ordered in each aisle
+
 ```{r}
 instacart %>% 
   group_by(aisle) %>% 
@@ -32,8 +32,8 @@ instacart %>%
 Column {data-width=350}
 -----------------------------------------------------------------------
 
-### Chart B
-The Organic Whole Strawberries' order hour of day in different days 
+### The Organic Whole Strawberries' order hour of day in different days 
+
 ```{r}
 instacart %>% 
   filter(product_name == "Organic Whole Strawberries" ) %>% 
@@ -48,8 +48,8 @@ instacart %>%
 
 ```
 
-### Chart C
-The Comparison of Organic Whole String Cheese and Organic Hass Avocado sold in a week.
+### The Comparison of Organic Whole String Cheese and Organic Hass Avocado sold in a week.
+
 ```{r}
 instacart %>% 
   mutate(
@@ -70,4 +70,6 @@ instacart %>%
           group = ~product_name, color = ~product_name, 
           type = "scatter", mode = "makers") 
 ```
+
+
 

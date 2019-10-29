@@ -8,10 +8,8 @@ output:
 This is Ziqi's website for Homework 4.
 It is awesome!
 
-This page includes my academic experience and you could find some way to contact me on the top of this website.
 
-# Here is the draft of the ploty.
-[here](plot_for_hw4.html)
+This page includes my academic experience and you could find some way to contact me on the top of this website.
 
 
 # CV
@@ -19,6 +17,11 @@ This page includes my academic experience and you could find some way to contact
 You can know about me [here](CV.html).
 
 
+# Here is the draft of the ploty.
+
+The plots would also present in dashboard. Click [here](plot_for_hw4.html) to see this draft.(It's ok to not see this)
+
+try this[Dash](Dashboard.html)
 # Let's see my little cat! 
 
 She was born six months ago. Her name is Avocado and she lives with my parents now.
