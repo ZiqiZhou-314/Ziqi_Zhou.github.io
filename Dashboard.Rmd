@@ -19,7 +19,7 @@ Column {data-width=650}
 -----------------------------------------------------------------------
 
 ### Chart A
-
+Number of items ordered in each aisle
 ```{r}
 instacart %>% 
   group_by(aisle) %>% 
@@ -33,7 +33,7 @@ Column {data-width=350}
 -----------------------------------------------------------------------
 
 ### Chart B
-
+The Organic Whole Strawberries' order hour of day in different days 
 ```{r}
 instacart %>% 
   filter(product_name == "Organic Whole Strawberries" ) %>% 
@@ -49,8 +49,25 @@ instacart %>%
 ```
 
 ### Chart C
-
+The Comparison of Organic Whole String Cheese and Organic Hass Avocado sold in a week.
 ```{r}
-
+instacart %>% 
+  mutate(
+    order_dow=recode(order_dow,
+                     `0`="Sunday",`1`="Monday",`2`="Tuesday",`3`="Wednesday",
+                     `4`="Thursday",`5`="Friday",`6`="Saturday"),
+    order_dow = factor(order_dow,order = TRUE, levels = c("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"))
+    ) %>% 
+  filter(
+    product_name == "Organic Whole String Cheese" | 
+      product_name == "Organic Hass Avocado"
+  ) %>% 
+  group_by(product_name, order_dow) %>% 
+  summarize(
+    Total_sold_a_day = n()
+  ) %>% 
+  plot_ly(x = ~order_dow, y = ~Total_sold_a_day, 
+          group = ~product_name, color = ~product_name, 
+          type = "scatter", mode = "makers") 
 ```
 
